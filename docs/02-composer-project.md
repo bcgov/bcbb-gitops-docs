@@ -12,7 +12,7 @@ https://github.com/bcgov/MFIN-Data-Catalogue
 
 * https://github.com/bcgov/MFIN-Data-Catalogue/actions
 
-> **Note**: Currently only a basic site installation is performed (see next steps).
+> **Note**: Currently only a basic site installation is performed (see Next Steps below).
 
 ![Docker Scaffold](assets/images/docker-scaffold.png)
 

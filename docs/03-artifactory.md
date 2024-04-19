@@ -4,11 +4,12 @@
 
 ## Create the Artifactory project
 
-Consulted the official Platform Documentation:
+Recommended to consult the [BC Government Private Cloud Technical Documentation
+Component](https://developer.gov.bc.ca/docs/default/component/platform-developer-docs/docs/build-deploy-and-maintain-apps/setup-artifactory-project-repository/
+)
 
-* https://docs.developer.gov.bc.ca/setup-artifactory-project-repository/
 
-Issued the following commands to create an Artifactory project:
+Issue the following commands to create an Artifactory project for `ea352d`:
 
 ```sh
 oc project ea352d-tools
@@ -61,17 +62,14 @@ Events:                    <none>
 
 ## RocketChat
 
-There were some minor permission issues when first using Artifactory.
-
-Luckily the Platform Team assisted with this quickly.
+There were some minor permission issues when first using Artifactory. The Platform Services Team was able to assist with this quickly.
 
 ![Artifactory Permissions](assets/images/rocketchat-artifactory-permissions.png)
 
 ## Added Users and Service Accounts to Project
 
-Consulted the official Platform Documentation:
-
-* https://docs.developer.gov.bc.ca/setup-artifactory-project-repository/#add-users-and-service-accounts-to-a-project
+Consulted the official [BC Government Private Cloud Technical Documentation
+Component](https://developer.gov.bc.ca/docs/default/component/platform-developer-docs/docs/build-deploy-and-maintain-apps/setup-artifactory-project-repository/#add-users-and-service-accounts-to-a-project)
 
 Added the `default-ea352d-nkfhha` service account from the `artifacts-default-fcsnzt` basic auth secret.
 
@@ -79,9 +77,8 @@ Added the `default-ea352d-nkfhha` service account from the `artifacts-default-fc
 
 ## Add a docker repository to project
 
-Consulted the official Platform Documentation:
-
-* https://docs.developer.gov.bc.ca/setup-artifactory-project-repository/#add-a-repository-to-your-project
+Consulted the [BC Government Private Cloud Technical Documentation
+Component](https://developer.gov.bc.ca/docs/default/component/platform-developer-docs/docs/build-deploy-and-maintain-apps/setup-artifactory-project-repository/#add-a-repository-to-your-project)
 
 Added the docker repository `mea3-mfin-docker-local` following the given naming standards.
 

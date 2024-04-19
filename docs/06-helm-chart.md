@@ -1,6 +1,6 @@
 # Helm Chart
 
-Other then the fact that the whole [Helm Chart for Drupal](https://github.com/drupalwxt/helm-drupal) had to be cloned into the [Git Tenant Repo](https://github.com/bcgov-c/tenant-gitops-ea352d/) only minimal adjustments needed to be made for the successful deployment of a Drupal Site.
+Other then the fact that the whole [Helm Chart for Drupal](https://github.com/drupalwxt/helm-drupal) had to be cloned into the [Git Tenant Repo](https://github.com/bcgov-c/tenant-gitops-ea352d/), only minimal adjustments needed to be made for the successful deployment of a Drupal Site.
 
 ## Network Policies
 

@@ -9,7 +9,9 @@ Proceed to the OpenShift console:
 
 https://console.apps.silver.devops.gov.bc.ca/dashboards
 
-You may be greeted by the Pathfinder SSO
+You may be greeted by the **OpenShift 4 Platform OAuth - Login to Silver Cluster** screen; from there click "Developer Log In" which takes you to the **Pathfinder Single Sign-On** (SSO) screen.
+
+![SSO Screen](assets/images/bcgov_sso.png)
 
 Select "Azure AD OIDC" and authenticate with your first.last@gov.bc.ca email address and using Microsoft Authenticator.
 

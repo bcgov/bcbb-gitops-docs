@@ -13,7 +13,7 @@ You may be greeted by the **OpenShift 4 Platform OAuth - Login to Silver Cluster
 
 ![SSO Screen](assets/images/bcgov_sso.png)
 
-Select "Azure AD OIDC" and authenticate with your first.last@gov.bc.ca email address and using Microsoft Authenticator.
+Select "IDIR MFA" and authenticate with your first.last@gov.bc.ca email address and using Microsoft Authenticator, if prompted.
 
 Once you are logged into the OpenShift console you can select "Copy login command" under your profile name.
 

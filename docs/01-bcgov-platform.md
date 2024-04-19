@@ -1,5 +1,5 @@
 # BCGOV Platform
-This documentation package illustrates the steps taken to host a Drupal app on the BC Gov Openshift environment. The sample application throughout is the Finance Data Catalogue which is built on the BC Base Build (bcbb). See [bcbb-related repositories](https://github.com/bcgov/?q=bcbb)
+This documentation package illustrates the steps taken to host a Drupal app on the BC Gov Openshift environment. The sample application referred to throughout this documentation is the [Finance Data Catalogue](https://www.github.com/bcgov/MFIN-Data_Catalogue) which is built on the BC Base Build (bcbb). See [bcbb-related repositories](https://github.com/bcgov/?q=bcbb)
 
 ![OpenShift Console](assets/images/openshift-console.png)
 

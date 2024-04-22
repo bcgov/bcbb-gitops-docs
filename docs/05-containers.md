@@ -4,11 +4,11 @@ The following containers need to run successfully on OpenShift.
 
 * PHP-FPM
 * Nginx
-* MySQL
+* MySQL or postgres (the latter in the case of MFIN-Data_Catalogue)
 * Redis
 * Varnish
 
-From a container standpoint only the Nginx container needed additional customization to run on OpenShift.
+From a container standpoint, only the Nginx container needed additional customization to run on OpenShift.
 
 These changes are discussed clearly in the following blog entry:
 
@@ -25,4 +25,4 @@ FROM --platform=linux/amd64 nginxinc/nginx-unprivileged:alpine3.17
 COPY --from=src /var/www/html /var/www/html
 ```
 
-However it looks like the official nginx:alpine container image can work as well as long as the nginx.conf changes are made.
+However, it looks like the official nginx:alpine container image can work as well as long as the nginx.conf changes are made.

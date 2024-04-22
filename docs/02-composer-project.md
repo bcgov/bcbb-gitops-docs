@@ -1,18 +1,18 @@
 # Composer Project
 
-![MFIN Data Catalogue](assets/images/mfin-data-catalogue.png)
-
 The following repository has been setup based on the [Composer for Drupal Project](https://github.com/drupal-composer/drupal-project) standards:
 
-* https://github.com/bcgov/MFIN-Data-Catalogue
+https://github.com/bcgov/MFIN-Data-Catalogue
+
+  ![MFIN Data Catalogue](assets/images/mfin-data-catalogue.png)
 
 ## Continuous Integration
 
-[Docker Scaffold](https://github.com/drupalwxt/docker-scaffold) has been integrated into the Composer Project.
+[Docker Scaffold for Drupal WxT](https://github.com/drupalwxt/docker-scaffold) has been integrated into the Composer Project.
 
 * https://github.com/bcgov/MFIN-Data-Catalogue/actions
 
-> **Note**: Currently only a basic site installation is performed (see next steps).
+> **Note**: Currently only a basic site installation is performed (see Next Steps below).
 
 ![Docker Scaffold](assets/images/docker-scaffold.png)
 

@@ -15,7 +15,7 @@ vault login -method=oidc role=ea352d
 ```sh
 Complete the login via your OIDC provider. Launching browser to:
 
-    https://loginproxy.gov.bc.ca/auth/realms/platform-services/protocol/openid-connect/auth
+https://loginproxy.gov.bc.ca/auth/realms/platform-services/protocol/openid-connect/auth
 
 Waiting for OIDC authentication to complete...
 Success! You are now authenticated. The token information displayed below

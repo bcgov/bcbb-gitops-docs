@@ -17,7 +17,7 @@ oc patch artproj mfin-data-catalogue -p '{"spec":{"quota":"100"}}' --type merge
 oc patch artproj mfin-data-catalogue -p '{"spec":{"quota_in_Gi":"100"}}' --type merge
 ```
 
-Query the Artifactory project CRD and check the status:
+Query the Artifactory project Custom Resource Definition (CRD) and check the status:
 
 ```sh
 oc describe artproj
@@ -89,6 +89,4 @@ Added the docker repository `mea3-mfin-docker-local` following the given naming 
 
 ## Next Steps
 
-* Wait for the containers to be pushed from Composer Project repo
-* Once containers are pushed check and inspect XRay that no known critical vulnerabilities
-* Any additional integration with GitHub Actions and CI
+* Attempt to also integrate with XRay a counterpart to Artifactory that the BCGov Platform will eventually add.

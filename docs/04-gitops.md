@@ -217,5 +217,4 @@ An conversation with a member of the platform team was had and they resolved thi
 
 ## Next Steps
 
-* Ensure rest of Project Team has necessary permissions
-* Check for availability of Argo CD Vault Plugin after several weeks
+* Check for availability of the Argo CD Vault Plugin moving away from the Vault injector method.

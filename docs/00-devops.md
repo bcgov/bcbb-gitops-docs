@@ -1,10 +1,10 @@
 ---
 title: "MFIN Data Catalogue"
 author: [William Hearn]
-date: "2023-06-19"
+date: "2024-05-30"
 subject: "GitOps"
 keywords: [BC Government, OpenPlus]
-subtitle: "Build and Deployment of Drupal on BC Gov Platform leveraging GitOps."
+subtitle: "Notes while setting up Drupal on the BCGov Platform leveraging GitOps."
 lang: "en"
 titlepage: true
 titlepage-color: "65aa02"

@@ -1,9 +1,9 @@
 # Vault
 
-https://docs.developer.gov.bc.ca/vault-getting-started-guide/#log-in-to-vault-ui
+Consult the [BC Government Private Cloud Technical Documentation](https://developer.gov.bc.ca/docs/default/component/platform-developer-docs/docs/secrets-management/vault-getting-started-guide/#log-in-to-vault-ui)
 
-ea352d-nonprod
-ea352d-prod
+ea352d-nonprod (dev, test)
+ea352d-prod (prod)
 
 ```sh
 export LICENSE_PLATE=ea352d
@@ -15,7 +15,7 @@ vault login -method=oidc role=ea352d
 ```sh
 Complete the login via your OIDC provider. Launching browser to:
 
-    https://loginproxy.gov.bc.ca/auth/realms/platform-services/protocol/openid-connect/auth
+https://loginproxy.gov.bc.ca/auth/realms/platform-services/protocol/openid-connect/auth
 
 Waiting for OIDC authentication to complete...
 Success! You are now authenticated. The token information displayed below

@@ -1,9 +1,9 @@
 # Vault
 
-https://docs.developer.gov.bc.ca/vault-getting-started-guide/#log-in-to-vault-ui
+Consult the [BC Government Private Cloud Technical Documentation](https://developer.gov.bc.ca/docs/default/component/platform-developer-docs/docs/secrets-management/vault-getting-started-guide/#log-in-to-vault-ui)
 
-ea352d-nonprod
-ea352d-prod
+ea352d-nonprod (dev, test)
+ea352d-prod (prod)
 
 ```sh
 export LICENSE_PLATE=ea352d

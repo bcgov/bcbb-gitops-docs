@@ -4,9 +4,7 @@
 
 ## Create an Argo Project
 
-Consulted the official Platform Documentation:
-
-* https://docs.developer.gov.bc.ca/argo-cd-usage/
+Consulted the [BC Government Private Cloud Technical Documentation](https://developer.gov.bc.ca/docs/default/component/platform-developer-docs/docs/automation-and-resiliency/argo-cd-usage/)
 
 Submitted the following manifest to create an Argo CD project:
 
@@ -68,7 +66,7 @@ spec:
 
 ## Background around Warden Operator
 
-The warden operator will create both an Argo Project and a git repo under the [bcgov-c](https://github.com/bcgov-c) GitHub organization to store our application manifests.
+The Warden Operator will create both an Argo Project and a git repo under the [bcgov-c](https://github.com/bcgov-c) GitHub organization to store our application manifests.
 
 * [Argo Project](https://gitops-shared.apps.silver.devops.gov.bc.ca/applications/openshift-bcgov-gitops-shared/mfin-data-catalogue)
 * [Git Tenant Repo](https://github.com/bcgov-c/tenant-gitops-ea352d/)
@@ -111,7 +109,7 @@ spec:
       selfHeal: true
 ```
 
-Instead due to constraints the application manifest is currently:
+Instead, due to constraints in the BC Private Cloud environment the application manifest is currently:
 
 ```yaml
 apiVersion: argoproj.io/v1alpha1
@@ -145,13 +143,13 @@ spec:
 
 While the two application manifests look very similar they have widely different implications.
 
-Several reasons the first example is the `Golden Path` are:
+The first example is considered the `Golden Path` because:
 
-* It simply calls the [Helm Chart for Drupal](https://github.com/drupalwxt/helm-drupal)  at its published location and you don't need to own this manifests
+* It simply calls the [Helm Chart for Drupal](https://github.com/drupalwxt/helm-drupal)  at its published location and you don't need to own the manifests
 * You can simply call a specific packaged version of the [Helm Chart for Drupal](https://github.com/drupalwxt/helm-drupal)
-* Then you just paste the overridden `values.yaml` inline directly into the `kind: Application` spec keeping things very simple
+* Then you just paste the overridden `values.yaml` inline directly into the `kind: Application` spec which keeps things very simple
 
-Whereas in the second example the following caveats come into play:
+In the second example the following caveats come into play:
 
 * The entire git repo of the [Helm Chart for Drupal](https://github.com/drupalwxt/helm-drupal) had to be copied into the [Git Tenant Repo](https://github.com/bcgov-c/tenant-gitops-ea352d/)
 * In order to sync up with any upstream changes there will be manual effort rather then bumping the specificed packaged version
@@ -187,15 +185,15 @@ Argo CD supports this through the use of the [Argo CD Vault Plugin](https://argo
 
 ### RocketChat
 
-An conversation with a member of the platform team was had and they will be looking into adding this functionality.
+A conversation with a member of the platform team was had and they will be looking into adding this functionality.
 
 ![Argo CD Vault Plugin](assets/images/rocketchat-argo-vault-plugin.png)
 
 ## Deployment
 
-Despite all of the caveats above a baseline proof of concept of launcing a Drupal site using Argo CD was successful.
+Despite the caveats above a baseline proof of concept of launching a Drupal site using Argo CD was successful.
 
-To minimize complexity of pulling from Artifactory etc and to just confirm everything was working correctly such as shared file mounts the `site-wxt` containers were used since they are already public.
+To minimize the complexity of pulling from Artifactory etc and to just confirm everything was working correctly such as shared file mounts the `site-wxt` containers were used since they are already public.
 
 The following site was installed and confirmed to be working.
 
